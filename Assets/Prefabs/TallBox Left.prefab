@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8140407122859374521}
   - component: {fileID: 252488758859530152}
-  - component: {fileID: 1785692935309068926}
+  - component: {fileID: 3870118491158915658}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -74,19 +74,19 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
+  m_Sprite: {fileID: 21300018, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 1
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1785692935309068926
-BoxCollider2D:
+--- !u!60 &3870118491158915658
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,17 +119,32 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.34, y: 1.16}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
-    drawMode: 2
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.14524688, y: 0.506866}
+      - {x: 0.017287957, y: 0.46249333}
+      - {x: -0.0962182, y: 0.52470356}
+      - {x: -0.17019436, y: 0.47210768}
+      - {x: -0.42538118, y: 0.2746486}
+      - {x: -0.44524658, y: 0.11351272}
+      - {x: -0.53173745, y: -0.07929025}
+      - {x: -0.23236272, y: -0.4810668}
+      - {x: 0.07958768, y: -0.5184511}
+      - {x: 0.38748983, y: -0.32041878}
+      - {x: 0.45500594, y: -0.16073962}
+      - {x: 0.5254397, y: -0.108495444}
+      - {x: 0.5284786, y: 0.08922017}
+      - {x: 0.43491313, y: 0.2592205}
+      - {x: 0.4216699, y: 0.30848226}
+  m_UseDelaunayMesh: 0
 --- !u!1 &5857997203293581716
 GameObject:
   m_ObjectHideFlags: 0

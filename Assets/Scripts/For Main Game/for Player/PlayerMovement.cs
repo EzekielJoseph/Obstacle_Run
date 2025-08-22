@@ -11,18 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private ScoreManagement scoreManagement;
     private Rewards rewards;
 
-    public TextMeshProUGUI gameOverText;
-
     private void Start()
     {
         transform.position = new Vector2(0f, yPosition);
         scoreManagement = FindObjectOfType<ScoreManagement>();
         rewards = FindObjectOfType<Rewards>();
-
-        if (gameOverText != null)
-        {
-            gameOverText.gameObject.SetActive(false);
-        }
     }
 
     private void Update()
@@ -47,12 +40,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (gameOverText != null)
-        {
-            gameOverText.gameObject.SetActive(true);
-            gameOverText.text = "Collided With " + other.gameObject.name;
-        }
-
         if (scoreManagement != null)
             scoreManagement.StopScore();
 

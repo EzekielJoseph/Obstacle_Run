@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4382553832121858369}
   - component: {fileID: 6167387726871177415}
-  - component: {fileID: 3426056443919385838}
+  - component: {fileID: 491032732511815616}
   m_Layer: 0
   m_Name: Capsule Green
   m_TagString: Untagged
@@ -72,13 +72,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8743480084432918986}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0.93, y: -0.04, z: -33.19735}
   m_LocalScale: {x: 1, y: 1.76, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3842799218279842309}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &6167387726871177415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -120,8 +120,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.30111146, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300008, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -131,8 +131,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3426056443919385838
-CapsuleCollider2D:
+--- !u!60 &491032732511815616
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -163,6 +163,35 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000023841858, y: -0.00000023841858}
-  m_Size: {x: 1.0000002, y: 2.0000005}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.96, y: 1.58}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.96, y: -0.13}
+      - {x: 0.97999996, y: -0.07}
+      - {x: 0.97999996, y: 0.48999998}
+      - {x: 0.64, y: 0.61}
+      - {x: 0.38, y: 0.77}
+      - {x: 0.12, y: 0.77}
+      - {x: -0.22, y: 0.63}
+      - {x: -0.42, y: 0.77}
+      - {x: -0.48, y: 0.77}
+      - {x: -0.71999997, y: 0.65}
+      - {x: -0.78, y: 0.37}
+      - {x: -0.97999996, y: 0.049999997}
+      - {x: -0.97999996, y: -0.25}
+      - {x: -0.7, y: -0.45}
+      - {x: -0.53999996, y: -0.78999996}
+      - {x: -0.02, y: -0.78999996}
+      - {x: 0.16, y: -0.77}
+      - {x: 0.42, y: -0.55}
+      - {x: 0.74, y: -0.37}
+  m_UseDelaunayMesh: 0

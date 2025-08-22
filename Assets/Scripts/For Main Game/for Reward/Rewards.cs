@@ -4,6 +4,7 @@ using UnityEngine;
 public class Rewards : MonoBehaviour
 {
     public GameObject rewardPanel;
+    public GameObject uiPanel;
     public GameObject player;
     public TextMeshProUGUI finalRewardText;
     public TextMeshProUGUI finalScoreText;
@@ -12,9 +13,9 @@ public class Rewards : MonoBehaviour
     public int silverLimit = 15;
     public int goldLimit = 25;
 
-    public string bronzeReward = "Bronze";
-    public string silverReward = "Silver";
-    public string goldReward = "Gold";
+    public string bronzeReward = "bronze";
+    public string silverReward = "silver";
+    public string goldReward = "gold";
 
     private void Start()
     {
@@ -33,13 +34,16 @@ public class Rewards : MonoBehaviour
 
             if (finalRewardText != null)
             {
-                finalRewardText.text = "Your Reward: " + reward;
+                finalRewardText.text = "you get: " + reward;
             }
 
             if (finalScoreText != null)
             {
                 finalScoreText.text = "Final Score: " + FindObjectOfType<ScoreManagement>().GetScore().ToString();
             }
+
+            uiPanel.SetActive(false);
+
         }
     }
 
@@ -51,6 +55,6 @@ public class Rewards : MonoBehaviour
         if (score >= goldLimit) return goldReward;
         else if (score >= silverLimit) return silverReward;
         else if (score >= bronzeLimit) return bronzeReward;
-        else return "No Reward";
+        else return "no reward";
     }
 }

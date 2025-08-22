@@ -47,7 +47,7 @@ public class InputController : MonoBehaviour
 
         UserDataManager.Instance.SetData(userData);
 
-        SceneManager.LoadScene("Pachinko Game");
+        SceneManager.LoadScene("Main Game");
     }
 
     public void onAssetClick()
